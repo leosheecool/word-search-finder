@@ -18,6 +18,7 @@ const findWords = (words: string[], matrix: string[][]) => {
 
   console.log(matrix)
   for (const word of words) {
+    console.log('Searching for:', word)
     const wordInitialIndexes = initialsIndexes.filter(
       (index: Index) => index.letter === word[0]
     );

@@ -60,7 +60,7 @@ export const searchWord = (word: string, matrix: string[][], startingIndex: Inde
   const isFittingInHeightRev = startingIndex.row >= wordLength - 1
   const isFittingInLengthRev = startingIndex.col >= wordLength - 1
 
-  console.log("Checking word:", word, "Starting index:", startingIndex)
+  // console.log("Checking word:", word, "Starting index:", startingIndex)
 
   if (isFittingInHeightRev) {
     const toTheTop = (row: number, col: number) => ({row: row - 1, col})
@@ -133,6 +133,6 @@ export const searchWord = (word: string, matrix: string[][], startingIndex: Inde
       return true
     }
   }
-  console.log("No word found :(")
+  // console.log("No word found :(")
   return false
 }
