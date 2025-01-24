@@ -1,0 +1,23 @@
+{
+  "name": "word-search-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/word-search-finder.ts",
+    "build": "tsc",
+    "run:compiled": "node dist/algorithm.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.10",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
+    "eslint": "^9.18.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
