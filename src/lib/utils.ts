@@ -47,7 +47,7 @@ export const isCorrectWord = (
 ) => {
   let currentIndex = startingIndex;
 
-  for (let letterIndex = 0; letterIndex < word.length - 1; letterIndex++) {
+  for (let letterIndex = 0; letterIndex <= word.length - 1; letterIndex++) {
     if (word[letterIndex] !== matrix[currentIndex.row][currentIndex.col])
       return { isFound: false };
     if (letterIndex !== word.length - 1)
