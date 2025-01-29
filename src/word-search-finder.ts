@@ -6,14 +6,15 @@ const [, , letterStringList, wordList] = process.argv;
 const wordsList = wordList.split(',');
 const letterMatrix = stringTo2DArray(letterStringList);
 
-const findWord = (word: string, matrix: string[][], indexes: Index[]) => {
+export const findWord = (word: string, matrix: string[][], indexes: Index[]) => {
   for (const index of indexes) {
     const isFound = searchWord(word, matrix, index);
-    if (isFound) break;
+    if (isFound) return true;
   }
+  return false
 };
 
-const findWords = (words: string[], matrix: string[][]) => {
+export const findWords = (words: string[], matrix: string[][]) => {
   const initialsIndexes = getInitialIndexes(words, matrix);
 
   console.log(matrix)
